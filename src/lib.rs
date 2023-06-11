@@ -37,7 +37,6 @@ fn csv_to_records(record: &Record) -> Result<Vec<(Option<RecordData>, RecordData
             row.insert("key".to_string(), key);
             row.insert("value".to_string(), value);
             row.insert("timestamp".to_string(), timestamp.to_string());
-            println!(" KV {:?}", row);
             rows.push(row);
         }
     }
